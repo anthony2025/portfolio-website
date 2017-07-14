@@ -21,13 +21,13 @@ export default function App(props) {
       </Page>
 
       <Page>
-        <Title firstTitle="My Story" />
+        <Title secondTitle="My Story" />
         {/*  <Image />  */}
         <Paragraph content={biography} />
       </Page>
 
       <Page>
-        <Title firstTitle="Hiring?" />
+        <Title secondTitle="Hiring?" />
         <Contact />
       </Page>
     </div>

@@ -1,7 +1,7 @@
 export default () => ({
   primary: solarized.base02,
   accent: solarized.magenta,
-  opposite: solarized.base2
+  opposite: '#FAFAFA'
 })
 
 const solarized = {

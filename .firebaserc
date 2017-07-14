@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "portfolio-website"
+    "default": "portfolio-website",
+    "portfolio-website": "portfolio-website-4bcaa"
   }
 }
