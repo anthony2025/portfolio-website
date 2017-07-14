@@ -34,9 +34,7 @@ export default function Contact(props) {
 }
 
 const Wrapper = styled.div`
-  font-size: 24px;
   line-height: 1.5;
-
   @media (max-width: 700px) {
     flex-direction: column;
   }

@@ -15,13 +15,14 @@ export default function Page(props) {
 }
 
 const Wrapper = styled.div`
-  min-height: 100vh;
   width: 100%;
   @media (min-width: 700px) {
-    padding: 50px 20%;
+    padding: 75px 20% 50px 20%;
+    font-size: 24px;
   }
   @media (max-width: 700px) {
-    padding: 50px 30px;
+    padding: 75px 30px 50px 30px;
+    font-size: 18px;
   }
 
   display: flex;

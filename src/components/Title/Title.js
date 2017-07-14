@@ -28,9 +28,9 @@ export default function Title(props) {
 }
 
 const Wrapper = styled.div`
-  margin-bottom: 70px; // Attention, children setting its own margin, no bueno
   line-height: .8;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, .4);
+  margin-bottom: 75px; // NOBUENO, children setting its own margin
   border-bottom: ${props => (props.border ? '3px' : '0')} solid
     ${props => props.theme.accent};
 

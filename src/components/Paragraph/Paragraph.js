@@ -16,4 +16,10 @@ export default function Paragraph(props) {
   )
 }
 
-const Wrapper = styled.div`font-size: 24px;`
+const Wrapper = styled.div`
+  margin-bottom: 40px; // NOBUENO, children setting its own margin
+  @media (min-width: 700px) {
+    padding-left: 15px;
+    border-left: 2px dotted ${props => props.theme.accent};
+  }
+`

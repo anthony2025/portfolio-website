@@ -7,9 +7,11 @@ import Title from 'components/Title'
 import Image from 'components/Image'
 import Paragraph from 'components/Paragraph'
 import Contact from 'components/Contact'
+import Footer from 'components/Footer'
 
 import introduction from 'content/introduction'
 import biography from 'content/biography'
+import images from 'content/images'
 
 export default function App(props) {
   return (
@@ -22,14 +24,16 @@ export default function App(props) {
 
       <Page>
         <Title secondTitle="My Story" />
-        {/*  <Image />  */}
         <Paragraph content={biography} />
+        <Image src={images.uva} />
       </Page>
 
       <Page>
         <Title secondTitle="Hiring?" />
         <Contact />
       </Page>
+
+      <Footer src={images.lima} />
     </div>
   )
 }
