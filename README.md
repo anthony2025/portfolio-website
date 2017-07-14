@@ -60,9 +60,7 @@ This project currently uses [create-react-app], look at their incredible documen
 ## License
 <div id='license'/>
 
-This project is dedicated to the public domain, with a CC0 license. No attribution is required and no warranties are provided: use as you wish.
-
-The libraries used are property of their respective authors.
+This project is dedicated to the public domain, with a CC0 license. No attribution is required and no warranties are provided: use as you wish. The libraries used are property of their respective authors.
 
 ![cc0 badge](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)
 
