@@ -3,9 +3,9 @@
 [![forthebadge](http://forthebadge.com/images/badges/designed-in-ms-paint.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/check-it-out.svg)](http://forthebadge.com)
 
-A small responsive portfolio website made for my egocentric self. Powered by React and Styled-Components. It should serve as a central hub for my personal projects, and contact information. The site is live at: [https://anthonyascencio.me](https://anthonyascencio.me)
+A small responsive portfolio website made for my egocentric self. Powered by React, React-Snapshot, and Styled-Components. It should serve as a central hub for my personal projects, and contact information. The site is live at: [https://anthonyascencio.me](https://anthonyascencio.me)
 
-Feel free to shamelessly copy all you need. This site is a perfect candidate for server side rendering, but you might wanna start with snapshot rendering. Content is static, but the site is already architectured to make the move to data-driven feel almost plug & play.
+The site is prerendered (snapshotted) to serve usable markup and work even without Javascript. Content is static, but the site is already structured to make the move to data-driven feel almost plug & play. Feel free to shamelessly copy all you need.
 
 ## Table of Contents
 - [Technologies](#technologies)
@@ -19,6 +19,7 @@ Feel free to shamelessly copy all you need. This site is a perfect candidate for
 
 * [React] allow us to code in components, which forces us towards code reusability and design consistency.
 * [Styled-Components] and [Native CSS Variables] gives us local scoped css, easy theming, conditional styling, and all the power of a **CSS-in-JS** solution.
+* [React-Snapshot] prerenders all markup at build time, and gives us a completely frictionless server side rendering experience.
 * The new **Flexbox** and **Grid** standards provide a fully responsive and solid layout system.
 * CSS3 **Transitions** and **Animations** help us add a touch of interactivity and playfulness.
 * [Firebase] Hosting gives us a decent SPA hosting solution, Storage serves as a CDN for all our assets
@@ -68,6 +69,7 @@ The libraries used are property of their respective authors.
 ![cc0 badge](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)
 
 [react]: https://github.com/facebook/react
+[react-snapshot]: https://github.com/geelen/react-snapshot
 [create-react-app]: https://github.com/facebookincubator/create-react-app
 [firebase]: https://firebase.google.com/docs/reference/rest/database/
 [styled-components]: https://github.com/styled-components/styled-components/

@@ -18,11 +18,12 @@
     "firebase-tools": "^3.9.1",
     "prettier": "^1.5.2",
     "react-scripts": "1.0.10",
+    "react-snapshot": "^1.1.0",
     "source-map-explorer": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && react-snapshot",
     "test": "react-scripts test --env=jsdom",
     "deploy": "yarn build && firebase deploy",
     "analyze": "yarn build && source-map-explorer build/static/js/main.*",
