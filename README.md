@@ -37,12 +37,10 @@ The site is prerendered (snapshotted) to serve usable markup and work even witho
 * [Yarn] >= 0.20.x must be installed.
 * [Firebase] empty database on the free tier.
 
-To setup optional features you need to change these environment variables. Either add them to .env, or create a .env.local file in the root folder of the project (recommended).
+To setup optional environment variables, either add them to .env, or create a .env.local file in the root folder of the project (recommended).
 ```
 # Github Repo, used in fork corner
 REACT_APP_REPOSITORY
-# Email in mailto links, used in footer
-REACT_APP_DEV_EMAIL
 # Sentry url for errors logging in production
 REACT_APP_RAVEN_URL
 ```
