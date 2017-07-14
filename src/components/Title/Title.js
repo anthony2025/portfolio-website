@@ -2,52 +2,58 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import WithHorizontalLines from 'styling/WithHorizontalLines'
+import shake from 'styling/shakeAnimation'
 
 Title.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string
+  firstTitle: PropTypes.string,
+  secondTitle: PropTypes.string,
+  border: PropTypes.bool
+}
+
+Title.defaultProps = {
+  border: true
 }
 
 export default function Title(props) {
   return (
-    <Wrapper>
-      <BigTitle>
-        {props.title}
-      </BigTitle>
-      <WithHorizontalLines>
-        <SmallTitle>
-          {props.subtitle}
-        </SmallTitle>
-      </WithHorizontalLines>
+    <Wrapper className={props.className} border={props.border}>
+      <FirstTitle>
+        {props.firstTitle}
+      </FirstTitle>
+      <SecondTitle>
+        {props.secondTitle}
+      </SecondTitle>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  color: ${props => props.theme.primary};
-  text-align: center;
+  margin-bottom: 70px; // Attention, children setting its own margin, no bueno
+  line-height: .8;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, .4);
+  border-bottom: ${props => (props.border ? '3px' : '0')} solid
+    ${props => props.theme.accent};
+
+  animation: ${shake} 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  &:active {
+    animation: none;
+  }
 `
 
-const BigTitle = styled.div`
-  font-family: SignikaSemi;
-
+const FirstTitle = styled.div`
   @media (min-width: 700px) {
+    font-size: 50px;
+  }
+  @media (max-width: 700px) {
     font-size: 40px;
   }
-  @media (max-width: 700px) {
-    font-size: 30px;
-  }
 `
 
-const SmallTitle = styled.div`
-  font-family: SignikaLight;
-  margin-top: 10px;
-
+const SecondTitle = styled.div`
   @media (min-width: 700px) {
-    font-size: 30px;
+    font-size: 80px;
   }
   @media (max-width: 700px) {
-    font-size: 20px;
+    font-size: 70px;
   }
 `

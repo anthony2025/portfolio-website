@@ -13,11 +13,13 @@ export default () => injectGlobal`
   }
 
   body {
-    height: 100%;
-    font-size: 16px;
-    line-height: 1;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    line-height: 1;
+    background-color: #333;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   a,
@@ -29,18 +31,5 @@ export default () => injectGlobal`
     border: 0;
     background: none;
     cursor: pointer;
-  }
-
-  @font-face {
-    font-family: SignikaRegular;
-    src: url(${process.env.PUBLIC_URL}/font/signika-regular.otf);
-  }
-  @font-face {
-    font-family: SignikaLight;
-    src: url(${process.env.PUBLIC_URL}/font/signika-light.otf);
-  }
-  @font-face {
-    font-family: SignikaSemi;
-    src: url(${process.env.PUBLIC_URL}/font/signika-semi.otf);
   }
 `

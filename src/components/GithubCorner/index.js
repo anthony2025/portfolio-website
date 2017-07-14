@@ -1,8 +1,8 @@
 import GithubCorner from './GithubCorner'
-import {connect} from 'react-redux'
+import injectProps from 'utils/injectProps'
 
-const mapStateToProps = state => ({
+const mapToProps = state => ({
   repository: process.env.REACT_APP_REPOSITORY
 })
 
-export default connect(mapStateToProps, null, null, {pure: false})(GithubCorner)
+export default injectProps(mapToProps)(GithubCorner)
