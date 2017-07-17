@@ -10,6 +10,11 @@ const Image = styled.img.attrs({
   box-shadow: 2px 4px 8px rgba(0,0,0,.6);
   object-fit: cover;
   object-position: top;
+  transition: 2.5s;
+  &:hover,
+  &:active {
+    filter: grayscale(90%);
+  }
 `
 
 Image.propTypes = {

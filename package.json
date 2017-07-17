@@ -9,14 +9,14 @@
   "private": true,
   "dependencies": {
     "prop-types": "^15.5.10",
-    "raven-js": "^3.16.1",
+    "raven-js": "^3.17.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "styled-components": "^2.1.1"
   },
   "devDependencies": {
     "firebase-tools": "^3.9.1",
-    "prettier": "^1.5.2",
+    "prettier": "^1.5.3",
     "react-scripts": "1.0.10",
     "react-snapshot": "^1.1.0",
     "source-map-explorer": "^1.4.0"

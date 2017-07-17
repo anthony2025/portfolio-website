@@ -1,10 +1,7 @@
-export default `Welcome!
+export default `I am a Full Stack Developer focused on working with the MERN stack to build data-driven, responsive websites (like this one).
 
-Ignore the obnoxiously flashy title. I am a Full Stack Developer, currently living in Alexandria, VA. I focus in working with React and the Node ecosystem to build data-driven, responsive websites (like this one).
-
-My main quality is a never ending, insatiable desire to learn. I have successfully taught myself a large gamut of web technologies in record time, and never stop in my quest to keep learning more every.single.day.
+I work mainly with React, Redux, Relay, Firebase and NodeJS. I have also built projects with Express, MongoDB, Android, Java, and CSS Modules.
 
 If my work interests you please feel free to reach out, I would love to learn more about what you are up to.
 
-Have a great day and stay awesome.
-`
+Stay awesome. 🙃`

@@ -18,7 +18,7 @@ export default () => injectGlobal`
     font-size: 16px;
     line-height: 1;
     background-color: #333;
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    font-family: Open Sans, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
   Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 

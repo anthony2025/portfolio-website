@@ -8,6 +8,11 @@ const Footer = styled.img.attrs({
   max-height: 500px; // NOBUENO, children setting its own dimensions
   object-fit: cover;
   object-position: bottom;
+  transition: 2s;
+  &:hover,
+  &:active {
+    filter: grayscale(90%);
+  }
 `
 
 Footer.propTypes = {

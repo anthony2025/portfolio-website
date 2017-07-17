@@ -18,17 +18,17 @@ const Wrapper = styled.div`
   width: 100%;
   @media (min-width: 700px) {
     padding: 75px 20% 50px 20%;
-    font-size: 24px;
+    font-size: 19px;
   }
   @media (max-width: 700px) {
-    padding: 75px 30px 50px 30px;
-    font-size: 18px;
+    padding: 75px 20px 50px 20px;
+    font-size: 16px;
   }
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 1.4;
+  line-height: 1.5;
 
   &:nth-child(odd) {
     background: ${props => props.theme.opposite};

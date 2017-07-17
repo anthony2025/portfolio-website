@@ -21,6 +21,7 @@ export default function Contact(props) {
             <Label>
               {key.toUpperCase()}
             </Label>
+
             <Link action={value.action} data={value.data}>
               {value.action === 'download'
                 ? 'click to download PDF'

@@ -28,6 +28,7 @@ export default function Title(props) {
 }
 
 const Wrapper = styled.div`
+  cursor: pointer;
   line-height: .8;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, .4);
   margin-bottom: 75px; // NOBUENO, children setting its own margin
@@ -45,7 +46,7 @@ const FirstTitle = styled.div`
     font-size: 50px;
   }
   @media (max-width: 700px) {
-    font-size: 40px;
+    font-size: 30px;
   }
 `
 
@@ -54,6 +55,6 @@ const SecondTitle = styled.div`
     font-size: 80px;
   }
   @media (max-width: 700px) {
-    font-size: 70px;
+    font-size: 60px;
   }
 `
