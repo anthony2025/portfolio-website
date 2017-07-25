@@ -1,7 +1,7 @@
 export default {
   phone: '571 278 8638',
   email: 'anthony2025@gmail.com',
-  location: 'Alexandria, VA, USA',
+  location: 'Alexandria, VA (willing to relocate)',
   github: 'github.com/anthony2025',
   linkedin: 'linkedin.com/in/anthony2025',
   resume:

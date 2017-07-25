@@ -43,7 +43,7 @@ const Wrapper = styled.div`
 
 const FirstTitle = styled.div`
   @media (min-width: 700px) {
-    font-size: 50px;
+    font-size: 45px;
   }
   @media (max-width: 700px) {
     font-size: 30px;
@@ -52,7 +52,7 @@ const FirstTitle = styled.div`
 
 const SecondTitle = styled.div`
   @media (min-width: 700px) {
-    font-size: 80px;
+    font-size: 70px;
   }
   @media (max-width: 700px) {
     font-size: 60px;

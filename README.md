@@ -1,6 +1,6 @@
 A small responsive portfolio website made for my egocentric self. Powered by React, react-snapshot, and Styled-Components. It should serve as a central hub for my personal projects, and contact information. The site is live at: [https://anthonyascencio.me](https://anthonyascencio.me)
 
-The site is prerendered (snapshotted) to serve usable markup and work even without Javascript. Content is static, but the site is already structured to make the move to data-driven feel almost plug & play. Feel free to shamelessly copy all you need.
+The site is prerendered (snapshotted) to serve usable markup and work even without Javascript. Content is static, but the code is already structured to make the move to data-driven feel almost plug & play. Feel free to shamelessly copy all you need.
 
 ## Table of Contents
 - [Technologies](#technologies)

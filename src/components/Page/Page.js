@@ -8,7 +8,7 @@ Page.propTypes = {
 
 export default function Page(props) {
   return (
-    <Wrapper className={props.className}>
+    <Wrapper className={props.className} id={props.id}>
       {props.children}
     </Wrapper>
   )

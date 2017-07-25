@@ -55,6 +55,7 @@ const octocatWave = keyframes`
 
 const Wrapper = styled.a`
   position: absolute;
+  z-index: 2;
   top: 0;
   right: ${props => (props.left ? 'auto' : '0')};
 `

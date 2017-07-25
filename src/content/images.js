@@ -6,7 +6,9 @@ export default {
   uva:
     'https://firebasestorage.googleapis.com/v0/b/portfolio-website-4bcaa.appspot.com/o/uva.jpg?alt=media&token=65fe26a4-1ef6-4294-bf5f-7862b3c5c623',
   simon:
-    'https://firebasestorage.googleapis.com/v0/b/portfolio-website-4bcaa.appspot.com/o/simon.png?alt=media&token=435ecb3a-08be-469e-b18f-ceac85e3067f',
+    'https://firebasestorage.googleapis.com/v0/b/portfolio-website-4bcaa.appspot.com/o/simon.png?alt=media&token=9da1ad90-71a5-48fb-8411-808c5cd19b63',
   roses:
-    'https://firebasestorage.googleapis.com/v0/b/portfolio-website-4bcaa.appspot.com/o/roses.png?alt=media&token=849d593d-96ca-4f88-864c-67b0000e0e0f'
+    'https://firebasestorage.googleapis.com/v0/b/portfolio-website-4bcaa.appspot.com/o/roses.png?alt=media&token=f28364af-43f4-4763-a4f8-9186f05d5927',
+  mxmaps:
+    'https://firebasestorage.googleapis.com/v0/b/portfolio-website-4bcaa.appspot.com/o/mxmaps.png?alt=media&token=02b1e4a6-c76f-44a4-bf9f-06093406eb92'
 }

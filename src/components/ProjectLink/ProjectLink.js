@@ -2,12 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-export default function Link(props) {
+ProjectLink.propTypes = {
+  repo: PropTypes.string,
+  demo: PropTypes.string
+}
+
+export default function ProjectLink(props) {
   return (
     <Wrapper>
       <Label>Repository</Label>
       <A href={`https//github.com/anthony2025/${props.repo}`}>
-        github.com/anthony2025/{props.repo}
+        https://github.com/anthony2025/{props.repo}
       </A>
       <br />
       <Label>Live at</Label>
@@ -33,7 +38,3 @@ const A = styled.a`
     color: ${props => props.theme.accent};
   }
 `
-
-Link.propTypes = {
-  href: PropTypes.string
-}
