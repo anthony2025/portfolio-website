@@ -1,14 +1,10 @@
-<img src="./public/logo.png" height="300px" width="auto"/>
-
-[![forthebadge](http://forthebadge.com/images/badges/designed-in-ms-paint.svg)](http://forthebadge.com)
-
-A small responsive portfolio website made for my egocentric self. Powered by React, React-Snapshot, and Styled-Components. It should serve as a central hub for my personal projects, and contact information. The site is live at: [https://anthonyascencio.me](https://anthonyascencio.me)
+A small responsive portfolio website made for my egocentric self. Powered by React, react-snapshot, and Styled-Components. It should serve as a central hub for my personal projects, and contact information. The site is live at: [https://anthonyascencio.me](https://anthonyascencio.me)
 
 The site is prerendered (snapshotted) to serve usable markup and work even without Javascript. Content is static, but the site is already structured to make the move to data-driven feel almost plug & play. Feel free to shamelessly copy all you need.
 
 ## Table of Contents
 - [Technologies](#technologies)
-- [Screenshot](#screenshot)
+- [Screenshots](#screenshots)
 - [Prerequisites](#prerequisites)
 - [Scripts](#scripts)
 - [License](#license)
@@ -23,18 +19,14 @@ The site is prerendered (snapshotted) to serve usable markup and work even witho
 * CSS3 **Transitions** and **Animations** help us add a touch of interactivity and playfulness.
 * [Firebase] Hosting gives us a decent SPA hosting solution, Storage serves as a CDN for all our assets
 
-## Screenshot
-<div id='screenshot'/>
+## Screenshots
+<div id='screenshots'/>
 
 ![Screenshot](/public/screenshot.png?raw=true)
 
 
-## Prerequisites
-<div id='prerequisites'/>
-
-* [Node] >= 6.x.x must be installed.
-* [Yarn] >= 0.20.x must be installed.
-* [Firebase] empty database on the free tier.
+## Setup
+<div id='setup'/>
 
 To setup optional environment variables, either add them to .env, or create a .env.local file in the root folder of the project (recommended).
 ```
@@ -47,7 +39,7 @@ REACT_APP_RAVEN_URL
 ## Scripts
 <div id='scripts'/>
 
-This project currently uses [create-react-app], look at their incredible documentation if more advanced configuration is needed.
+This project uses [create-react-app], look at their documentation for more advanced configuration.
 * `$ yarn install` in the app's root directory will install all the necessary dependencies.
 * `$ yarn start` will run the app's development server.
 * `$ yarn build` creates an optimized production build.
