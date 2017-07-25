@@ -1,7 +1,6 @@
-![My Narcissistic Corner](/public/logo.png?raw=true)
+<img src="./public/logo.png" height="300px" width="auto"/>
 
 [![forthebadge](http://forthebadge.com/images/badges/designed-in-ms-paint.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/check-it-out.svg)](http://forthebadge.com)
 
 A small responsive portfolio website made for my egocentric self. Powered by React, React-Snapshot, and Styled-Components. It should serve as a central hub for my personal projects, and contact information. The site is live at: [https://anthonyascencio.me](https://anthonyascencio.me)
 

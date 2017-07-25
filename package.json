@@ -28,5 +28,9 @@
     "deploy": "yarn build && firebase deploy",
     "analyze": "yarn build && source-map-explorer build/static/js/main.*",
     "format": "prettier --single-quote --no-bracket-spacing --no-semi --write 'src/**/*.js'"
+  },
+  "reactSnapshot": {
+    "include": ["/"],
+    "exclude": ["/**"]
   }
 }

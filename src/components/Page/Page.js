@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 1.5;
+  line-height: 1.4;
 
   &:nth-child(odd) {
     background: ${props => props.theme.opposite};
