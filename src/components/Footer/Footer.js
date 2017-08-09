@@ -1,18 +1,14 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import {fade} from 'styling/animation'
 
 const Footer = styled.img.attrs({
   src: props => props.src
 })`
-  width: 100%; // NOBUENO, children setting its own dimensions
-  max-height: 500px; // NOBUENO, children setting its own dimensions
-  object-fit: cover;
+  width: 100%;
+  max-height: 500px;
   object-position: bottom;
-  transition: 2s;
-  &:hover,
-  &:active {
-    filter: grayscale(90%);
-  }
+  ${fade()};
 `
 
 Footer.propTypes = {

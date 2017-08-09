@@ -18,16 +18,17 @@ export default function QuickLinks(props) {
       </Item>
       <Item>
         <Icon src={emailIcon} />
-        <Label href={props.email}>Email</Label>
+        <Label href={`mailto:${props.email}`}>Email</Label>
       </Item>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  width: 90%;
-  color: ${props => props.theme.darkerPrimary};
+  width: 70%;
+  color: ${({theme}) => theme.color.darkerPrimary};
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 `
@@ -35,13 +36,16 @@ const Wrapper = styled.div`
 const Item = styled.div`
   display: flex;
   align-items: center;
+  cursor: pointer;
+  margin: 0 10px;
+  &:hover {
+    color: ${({theme}) => theme.color.accent};
+  }
 `
 
 const Label = styled.a`
-  &:hover {
-    color: ${props => props.theme.accent};
-  }
-  margin-left: 10px;
+  margin-left: ${({theme}) => theme.space.xxs};
+  font-size: ${({theme}) => theme.text.size.md};
 `
 
 const Icon = styled.img`

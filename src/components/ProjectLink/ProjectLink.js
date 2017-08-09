@@ -11,13 +11,13 @@ export default function ProjectLink(props) {
   return (
     <Wrapper>
       <Label>Repository</Label>
-      <A href={`https//github.com/anthony2025/${props.repo}`}>
-        https://github.com/anthony2025/{props.repo}
+      <A href={props.repo}>
+        {props.repo}
       </A>
       <br />
       <Label>Live at</Label>
-      <A href={`https://${props.demo}`}>
-        https://{props.demo}
+      <A href={props.demo}>
+        {props.demo}
       </A>
     </Wrapper>
   )
@@ -25,16 +25,20 @@ export default function ProjectLink(props) {
 
 const Wrapper = styled.div`
   width: inherit;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 50px; // NOBUENO children setting its own margin
+  margin-bottom: ${({theme}) => theme.space.md};
 `
 
-const Label = styled.a`color: ${props => props.theme.accent};`
+const Label = styled.a`
+  font-size: ${({theme}) => theme.text.size.md};
+  color: ${({theme}) => theme.color.accent};
+`
 
 const A = styled.a`
   display: block;
+  color: inherit;
+  transition: .1s;
+  font-size: ${({theme}) => theme.text.size.sm};
   &:hover {
-    color: ${props => props.theme.accent};
+    color: ${({theme}) => theme.color.accent};
   }
 `

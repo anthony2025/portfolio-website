@@ -2,74 +2,52 @@ import React from 'react'
 
 import GithubCorner from 'components/GithubCorner'
 import Navbar from 'components/Navbar'
-import Page from 'components/Page'
-import Title from 'components/Title'
-import QuickLinks from 'components/QuickLinks'
-import Image from 'components/Image'
-import Paragraph from 'components/Paragraph'
-import ProjectLink from 'components/ProjectLink'
-import Contact from 'components/Contact'
 import Footer from 'components/Footer'
 
+import Home from 'pages/Home'
+import Skills from 'pages/Skills'
+import Project from 'pages/Project'
+import Bio from 'pages/Bio'
+import Contact from 'pages/Contact'
+
 import images from 'content/images'
-import introduction from 'content/introduction'
-import skills from 'content/skills'
 import roses from 'content/roses'
 import mxmaps from 'content/mxmaps'
 import simon from 'content/simon'
-import biography from 'content/biography'
-import contact from 'content/contact'
 
 export default function App(props) {
   return (
     <div>
       <GithubCorner />
       <Navbar />
+      <Home id="home" />
+      <Skills id="skills" />
 
-      <Page>
-        <Title firstTitle="Anthony" secondTitle="Ascencio" />
-        <Paragraph content={introduction} />
-        <QuickLinks />
-      </Page>
+      <Project
+        id="projects"
+        title="Rose's Daycare LLC"
+        image={images.roses}
+        repo="https://github.com/anthony2025/roses-daycare"
+        demo="https://rosesdaycare.center"
+        content={roses}
+      />
+      <Project
+        title="React MX Maps"
+        image={images.mxmaps}
+        repo="https://github.com/anthony2025/react-mxmaps"
+        demo="https://mxmaps.anthonyascencio.me"
+        content={mxmaps}
+      />
+      <Project
+        title="React Simon"
+        image={images.simon}
+        repo="https://github.com/anthony2025/react-simon"
+        demo="https://simon.anthonyascencio.me"
+        content={simon}
+      />
 
-      <Page id="skills">
-        <Title firstTitle="What tech I work with?" />
-        <Paragraph content={skills} />
-      </Page>
-
-      <Page id="projects">
-        <Image src={images.roses} />
-        <Title firstTitle="Rose's Daycare" />
-        <Paragraph content={roses} />
-        <ProjectLink repo="roses-daycare" demo="rosesdaycare.center" />
-      </Page>
-
-      <Page>
-        <Image src={images.mxmaps} />
-        <Title firstTitle="React MX Maps" />
-        <Paragraph content={mxmaps} />
-        <ProjectLink repo="react-mxmaps" demo="mxmaps.anthonyascencio.me" />
-      </Page>
-
-      <Page>
-        <Image src={images.simon} />
-        <Title firstTitle="React Simon" />
-        <Paragraph content={simon} />
-        <ProjectLink repo="react-simon" demo="simon.anthonyascencio.me" />
-      </Page>
-
-      <Page id="bio">
-        <Title firstTitle="Where do I come from?" />
-        <Paragraph content={biography} />
-        <Image src={images.mom} />
-      </Page>
-
-      <Page id="contact">
-        <Title firstTitle="Are you hiring?" />
-        <Paragraph content={contact} />
-        <Contact />
-      </Page>
-
+      <Bio id="bio" />
+      <Contact id="contact" />
       <Footer src={images.lima} />
     </div>
   )

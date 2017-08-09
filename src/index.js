@@ -2,7 +2,7 @@ import React from 'react'
 import {render} from 'react-snapshot'
 import App from 'components/App'
 
-import registerServiceWorker from 'utils/serviceWorker'
+import registerServiceWorker from 'utils/offline'
 import Raven from 'raven-js'
 
 import injectResetCSS from 'styling/reset.js'

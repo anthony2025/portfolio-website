@@ -5470,6 +5470,10 @@ pluralize@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
 
+polished@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-1.3.0.tgz#ae0e26f0297297635fcd70a25a4a0f1947b3af54"
+
 portfinder@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-0.4.0.tgz#a3ffadffafe4fb98e0601a85eda27c27ce84ca1e"
@@ -5836,7 +5840,7 @@ prompt@1.0.0:
     utile "0.3.x"
     winston "2.1.x"
 
-prop-types@^15.5.10, prop-types@^15.5.4:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -6004,7 +6008,7 @@ react-dev-utils@^3.0.2:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^15.3.0, react-dom@^15.6.1:
+react-dom@^15.3.0:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.1.tgz#2cb0ed4191038e53c209eb3a79a23e2a4cf99470"
   dependencies:
@@ -6012,6 +6016,15 @@ react-dom@^15.3.0, react-dom@^15.6.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.10"
+
+react-dom@next:
+  version "16.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.0.0-beta.1.tgz#be3e958578dae850884f7abd7ba559f9dfb39815"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.0"
+    prop-types "^15.5.6"
 
 react-error-overlay@^1.0.9:
   version "1.0.9"
@@ -6080,7 +6093,7 @@ react-snapshot@^1.1.0:
     react "^15.3.0"
     react-dom "^15.3.0"
 
-react@^15.3.0, react@^15.6.1:
+react@^15.3.0:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
   dependencies:
@@ -6089,6 +6102,15 @@ react@^15.3.0, react@^15.6.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.10"
+
+react@next:
+  version "16.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.0.0-beta.1.tgz#c02171171e9638b0c506f5a26b90e918f76909ab"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.0"
+    prop-types "^15.5.6"
 
 read-all-stream@^3.0.0:
   version "3.1.0"

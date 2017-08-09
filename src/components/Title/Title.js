@@ -1,60 +1,53 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-
-import shake from 'styling/shakeAnimation'
+import styled, {css} from 'styled-components'
+import {shake} from 'styling/animation'
 
 Title.propTypes = {
-  firstTitle: PropTypes.string,
-  secondTitle: PropTypes.string,
-  border: PropTypes.bool
+  smallTitle: PropTypes.string,
+  largeTitle: PropTypes.string,
+  border: PropTypes.bool,
+  shake: PropTypes.bool
 }
 
 Title.defaultProps = {
-  border: true
+  border: true,
+  shake: false
 }
 
 export default function Title(props) {
   return (
-    <Wrapper className={props.className} border={props.border}>
-      <FirstTitle>
-        {props.firstTitle}
-      </FirstTitle>
-      <SecondTitle>
-        {props.secondTitle}
-      </SecondTitle>
+    <Wrapper
+      className={props.className}
+      border={props.border}
+      shake={props.shake}
+    >
+      <SmallTitle>
+        {props.smallTitle}
+      </SmallTitle>
+      <LargeTitle>
+        {props.largeTitle}
+      </LargeTitle>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  cursor: pointer;
-  line-height: .8;
+  margin-bottom: ${({theme}) => theme.space.sm};
+  line-height: ${({theme}) => theme.text.height.xs};
   text-shadow: 1px 1px 1px rgba(255, 255, 255, .4);
-  margin-bottom: 75px; // NOBUENO, children setting its own margin
-  border-bottom: ${props => (props.border ? '3px' : '0')} solid
-    ${props => props.theme.accent};
+  padding-bottom: 2px;
+  cursor: pointer;
 
-  animation: ${shake} 0.82s cubic-bezier(.36, .07, .19, .97) both;
-  &:active {
-    animation: none;
-  }
+  // if props.border is true apply underline
+  ${props =>
+    props.border &&
+    css`border-bottom: ${props.theme.border.lg} solid ${props.theme.color
+      .accent}`};
+
+  // if props.shake apply shake animation
+  ${props => props.shake && shake()};
 `
 
-const FirstTitle = styled.div`
-  @media (min-width: 700px) {
-    font-size: 45px;
-  }
-  @media (max-width: 700px) {
-    font-size: 30px;
-  }
-`
-
-const SecondTitle = styled.div`
-  @media (min-width: 700px) {
-    font-size: 70px;
-  }
-  @media (max-width: 700px) {
-    font-size: 60px;
-  }
-`
+const SmallTitle = styled.div`font-size: ${({theme}) => theme.text.size.lg};`
+const LargeTitle = styled.div`font-size: ${({theme}) => theme.text.size.xl};`

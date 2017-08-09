@@ -1,9 +1,10 @@
 import {injectGlobal} from 'styled-components'
+import {fontStack, defaultSize, defaultHeight} from 'styling/variables/text'
+import {grayscale} from 'styling/variables/color'
 
 export default () => injectGlobal`
   html {
     box-sizing: border-box;
-    height: 100%;
   }
 
   *,
@@ -15,11 +16,11 @@ export default () => injectGlobal`
   body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    line-height: 1;
-    background-color: #333;
-    font-family: Open Sans, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: ${defaultSize}px;
+    line-height: ${defaultHeight};
+    font-family: ${fontStack};
+    background-color: ${grayscale[0]};
+    text-rendering: optimizeLegibility;
   }
 
   a,

@@ -17,9 +17,14 @@ export default function Paragraph(props) {
 }
 
 const Wrapper = styled.div`
-  margin-bottom: 50px; // NOBUENO, children setting its own margin
+  margin-bottom: ${({theme}) => theme.space.md};
+  max-width: 600px;
+  font-size: ${({theme}) => theme.text.size.sm};
+  line-height: ${({theme}) => theme.text.height.md};
+
   @media (min-width: 700px) {
     padding-left: 15px;
-    border-left: 2px dotted ${props => props.theme.accent};
+    border-left: ${({theme}) => theme.border.size.lg} dotted
+      ${({theme}) => theme.color.accent};
   }
 `

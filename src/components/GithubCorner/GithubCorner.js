@@ -76,4 +76,4 @@ const OctoArm = styled.path`
 
 const Background = styled.svg`fill: white;`
 
-const OctoBody = styled.path`fill: ${props => props.theme.accent};`
+const OctoBody = styled.path`fill: ${({theme}) => theme.color.accent};`

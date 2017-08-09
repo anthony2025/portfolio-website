@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export default function Navbar(props) {
   return (
     <Wrapper>
+      <Item href="#home">Home</Item>
       <Item href="#skills">Skills</Item>
       <Item href="#projects">Projects</Item>
       <Item href="#bio">Bio</Item>
@@ -17,19 +18,20 @@ const Wrapper = styled.div`
   top: 0;
   z-index: 1;
 
-  background: ${props => props.theme.darkerPrimary};
+  background: ${({theme}) => theme.color.darkerPrimary};
   box-shadow: 1px 2px 3px rgba(0, 0, 0, .4);
-  color: white;
 
-  font-size: 16px;
   display: flex;
-  padding: 10px 50px 10px 0;
   justify-content: space-around;
   align-items: center;
+
+  font-size: ${({theme}) => theme.text.size.sm};
+  padding: 10px 50px 10px 0;
 `
 
 const Item = styled.a`
+  color: ${({theme}) => theme.color.white};
   &:hover {
-    color: ${props => props.theme.accent};
+    color: ${({theme}) => theme.color.accent};
   }
 `
